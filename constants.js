@@ -1,10 +1,10 @@
-export const sequenceForLink = [
+const sequenceForLink = [
   'requestTime', 'mId', 'maId', 'userName', 'password',
   'txDetails.apiVersion', 'txDetails.requestId', 'txDetails.recurrentType', 'txDetails.perform3DS',
   'txDetails.orderData.orderId', 'txDetails.orderData.orderDescription', 'txDetails.orderData.amount', 'txDetails.orderData.currencyCode',
   'txDetails.statement', 'txDetails.cancelUrl', 'txDetails.returnUrl', 'txDetails.notificationUrl']
 
-export const sequenceForPayment = [
+const sequenceForPayment = [
   "requestTime", "mId", "maId", "userName", "password",
   "txDetails.apiVersion", "txDetails.requestId", " txDetails.recurrentType", "txDetails.perform3DS",
   "txDetails.orderData.orderId", "txDetails.orderData.orderDescription", "txDetails.orderData.amount", "txDetails.orderData.currencyCode",
@@ -24,3 +24,8 @@ export const sequenceForPayment = [
   // "txDetails.cancelUrl", "txDetails.returnUrl",
   "txDetails.notificationUrl"
 ];
+
+module.exports = {
+  sequenceForLink,
+  sequenceForPayment
+}
